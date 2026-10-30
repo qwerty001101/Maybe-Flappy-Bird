@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://017lq7fsh1l1"]
+
+[ext_resource type="Script" uid="uid://c1ve4jmfneygk" path="res://scripts/pipe_spawner.gd" id="1_q8clt"]
+
+[node name="Pipe spawner" type="Node2D" unique_id=983845042]
+script = ExtResource("1_q8clt")
+
+[node name="Timer" type="Timer" parent="." unique_id=965404353]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

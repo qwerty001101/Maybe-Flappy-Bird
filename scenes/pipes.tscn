@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bo64thftr08pa"]
+
+[ext_resource type="PackedScene" uid="uid://chqjewsj8ascc" path="res://scenes/pipe.tscn" id="1_f17p0"]
+
+[node name="Pipes" type="Node2D" unique_id=656475948]
+
+[node name="Pipe" parent="." unique_id=2116988856 instance=ExtResource("1_f17p0")]
+position = Vector2(0, -145)
+rotation = 3.1415927
+
+[node name="Pipe2" parent="." unique_id=389317588 instance=ExtResource("1_f17p0")]
+position = Vector2(0, 145)

@@ -1,10 +1,19 @@
 [gd_scene format=3 uid="uid://but1rf87v6psj"]
 
 [ext_resource type="PackedScene" uid="uid://blkqico2ml67h" path="res://scenes/character_body_2d.tscn" id="1_8kymq"]
+[ext_resource type="PackedScene" uid="uid://bo64thftr08pa" path="res://scenes/pipes.tscn" id="2_1adh3"]
 
 [node name="Root Game" type="Node2D" unique_id=209566638]
+metadata/_edit_vertical_guides_ = [191.0]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1995250615]
 zoom = Vector2(4, 4)
 
 [node name="CharacterBody2D" parent="." unique_id=700402142 instance=ExtResource("1_8kymq")]
+position = Vector2(0, -1)
+
+[node name="Pipes" parent="." unique_id=656475948 instance=ExtResource("2_1adh3")]
+position = Vector2(47, -91)
+
+[node name="Pipes2" parent="." unique_id=203692816 instance=ExtResource("2_1adh3")]
+position = Vector2(210, 73)

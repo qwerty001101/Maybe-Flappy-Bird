@@ -1,3 +1,12 @@
 [gd_scene format=3 uid="uid://chqjewsj8ascc"]
 
+[ext_resource type="Texture2D" uid="uid://blsf4tiy8arqw" path="res://assets/Tiles/Style 1/PipeStyle1.png" id="1_8x3ej"]
+
 [node name="Pipe" type="Node2D" unique_id=2116988856]
+metadata/_edit_horizontal_guides_ = [-116.0]
+metadata/_edit_vertical_guides_ = [-23.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1378593585]
+position = Vector2(0, 6.875001)
+scale = Vector2(1.2056249, 1.8925781)
+texture = ExtResource("1_8x3ej")
