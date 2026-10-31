@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://chqjewsj8ascc"]
 
 [ext_resource type="Texture2D" uid="uid://blsf4tiy8arqw" path="res://assets/Tiles/Style 1/PipeStyle1.png" id="1_8x3ej"]
+[ext_resource type="Script" uid="uid://crmqc01hdcjpf" path="res://scripts/pipe_moving.gd" id="1_arpqm"]
 
-[node name="Pipe" type="Node2D" unique_id=2116988856]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ydmx"]
+size = Vector2(32, 240)
+
+[node name="Pipe" type="Area2D" unique_id=1517675275]
+script = ExtResource("1_arpqm")
 metadata/_edit_horizontal_guides_ = [-116.0]
 metadata/_edit_vertical_guides_ = [-23.0]
 
@@ -10,3 +15,8 @@ metadata/_edit_vertical_guides_ = [-23.0]
 position = Vector2(0, 6.875001)
 scale = Vector2(1.2056249, 1.8925781)
 texture = ExtResource("1_8x3ej")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=392456508]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_5ydmx")
+disabled = true

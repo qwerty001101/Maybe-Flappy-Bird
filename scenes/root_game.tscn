@@ -2,6 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://blkqico2ml67h" path="res://scenes/character_body_2d.tscn" id="1_8kymq"]
 [ext_resource type="PackedScene" uid="uid://bo64thftr08pa" path="res://scenes/pipes.tscn" id="2_1adh3"]
+[ext_resource type="PackedScene" uid="uid://017lq7fsh1l1" path="res://scenes/pipe_spawner.tscn" id="3_biatl"]
+[ext_resource type="Script" uid="uid://bt0ijfril0gm3" path="res://scenes/label.gd" id="4_2wry2"]
+[ext_resource type="FontFile" uid="uid://c6pxlxl5x7beg" path="res://fonts/PixelOperator8.ttf" id="4_j23qy"]
 
 [node name="Root Game" type="Node2D" unique_id=209566638]
 metadata/_edit_vertical_guides_ = [191.0]
@@ -13,7 +16,21 @@ zoom = Vector2(4, 4)
 position = Vector2(0, -1)
 
 [node name="Pipes" parent="." unique_id=656475948 instance=ExtResource("2_1adh3")]
-position = Vector2(47, -91)
+position = Vector2(111, -74)
 
 [node name="Pipes2" parent="." unique_id=203692816 instance=ExtResource("2_1adh3")]
-position = Vector2(210, 73)
+position = Vector2(263, 93)
+
+[node name="Pipe spawner" parent="." unique_id=983845042 instance=ExtResource("3_biatl")]
+position = Vector2(345, 0)
+
+[node name="Pipes3" parent="." unique_id=2143998802 instance=ExtResource("2_1adh3")]
+position = Vector2(388, 33)
+
+[node name="Label" type="Label" parent="." unique_id=559761164]
+offset_left = -41.0
+offset_top = -162.0
+offset_right = 90.0
+offset_bottom = -139.0
+theme_override_fonts/font = ExtResource("4_j23qy")
+script = ExtResource("4_2wry2")
