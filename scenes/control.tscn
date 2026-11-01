@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c7vuc4l3lnhji"]
+
+[ext_resource type="FontFile" uid="uid://c6pxlxl5x7beg" path="res://fonts/PixelOperator8.ttf" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://b4b77dykpt1fa" path="res://scenes/Gameover.gd" id="1_r67kn"]
+
+[node name="Gameover" type="Control" unique_id=1243009079]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r67kn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=247634952]
+process_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=577811800]
+process_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = -34.0
+offset_right = 102.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=350700095]
+process_mode = 3
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_0fbet")
+theme_override_font_sizes/font_size = 32
+text = "You died"
+
+[node name="Button" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=1598344316]
+process_mode = 3
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("1_0fbet")
+theme_override_font_sizes/font_size = 24
+text = "Retry"
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Button" to="." method="_on_button_pressed"]

@@ -5,6 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://017lq7fsh1l1" path="res://scenes/pipe_spawner.tscn" id="3_biatl"]
 [ext_resource type="Script" uid="uid://bt0ijfril0gm3" path="res://scenes/label.gd" id="4_2wry2"]
 [ext_resource type="FontFile" uid="uid://c6pxlxl5x7beg" path="res://fonts/PixelOperator8.ttf" id="4_j23qy"]
+[ext_resource type="Script" uid="uid://rpp6qigyl17u" path="res://scenes/floorkill.gd" id="6_ckise"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ntnbk"]
 
 [node name="Root Game" type="Node2D" unique_id=209566638]
 metadata/_edit_vertical_guides_ = [191.0]
@@ -16,7 +19,7 @@ zoom = Vector2(4, 4)
 position = Vector2(0, -1)
 
 [node name="Pipes" parent="." unique_id=656475948 instance=ExtResource("2_1adh3")]
-position = Vector2(111, -74)
+position = Vector2(107, 19)
 
 [node name="Pipes2" parent="." unique_id=203692816 instance=ExtResource("2_1adh3")]
 position = Vector2(263, 93)
@@ -34,3 +37,12 @@ offset_right = 90.0
 offset_bottom = -139.0
 theme_override_fonts/font = ExtResource("4_j23qy")
 script = ExtResource("4_2wry2")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1176073016]
+position = Vector2(0, 171)
+script = ExtResource("6_ckise")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1514954124]
+shape = SubResource("WorldBoundaryShape2D_ntnbk")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
