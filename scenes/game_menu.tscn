@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c3kcgxukr3w81"]
 
 [ext_resource type="FontFile" uid="uid://div4dmmh6pn15" path="res://fonts/PixelOperator8-Bold.ttf" id="1_vrsc2"]
-[ext_resource type="Script" uid="uid://bmiujt1au3rui" path="res://scenes/game_menu.gd" id="1_ysvk1"]
+[ext_resource type="Script" uid="uid://bmiujt1au3rui" path="res://scripts/game_menu.gd" id="1_ysvk1"]
 [ext_resource type="FontFile" uid="uid://c6pxlxl5x7beg" path="res://fonts/PixelOperator8.ttf" id="2_ysvk1"]
 
 [node name="Game menu" type="Control" unique_id=576700896]

@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://bo64thftr08pa"]
 
 [ext_resource type="PackedScene" uid="uid://chqjewsj8ascc" path="res://scenes/pipe.tscn" id="1_f17p0"]
-[ext_resource type="Script" uid="uid://dod5g8a1gfukd" path="res://scenes/score_update.gd" id="2_3ahhd"]
+[ext_resource type="Script" uid="uid://chkao3l8c633o" path="res://scenes/pipes.gd" id="1_prsvi"]
+[ext_resource type="Script" uid="uid://dod5g8a1gfukd" path="res://scripts/score_update.gd" id="2_3ahhd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ntnbk"]
 size = Vector2(38, 61)
 
 [node name="Pipes" type="Node2D" unique_id=656475948]
+script = ExtResource("1_prsvi")
 
 [node name="Pipe" parent="." unique_id=2116988856 instance=ExtResource("1_f17p0")]
 position = Vector2(0, -145)

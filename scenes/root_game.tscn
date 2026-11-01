@@ -1,19 +1,18 @@
 [gd_scene format=3 uid="uid://but1rf87v6psj"]
 
 [ext_resource type="PackedScene" uid="uid://blkqico2ml67h" path="res://scenes/character_body_2d.tscn" id="1_8kymq"]
-[ext_resource type="Script" uid="uid://y2cma1rowh67" path="res://scenes/root_game.gd" id="1_epe1p"]
+[ext_resource type="Script" uid="uid://y2cma1rowh67" path="res://scripts/root_game.gd" id="1_epe1p"]
 [ext_resource type="PackedScene" uid="uid://bo64thftr08pa" path="res://scenes/pipes.tscn" id="2_1adh3"]
 [ext_resource type="PackedScene" uid="uid://017lq7fsh1l1" path="res://scenes/pipe_spawner.tscn" id="3_biatl"]
-[ext_resource type="Script" uid="uid://bt0ijfril0gm3" path="res://scenes/label.gd" id="4_2wry2"]
+[ext_resource type="Script" uid="uid://bt0ijfril0gm3" path="res://scripts/label.gd" id="4_2wry2"]
 [ext_resource type="FontFile" uid="uid://c6pxlxl5x7beg" path="res://fonts/PixelOperator8.ttf" id="4_j23qy"]
-[ext_resource type="Script" uid="uid://rpp6qigyl17u" path="res://scenes/floorkill.gd" id="6_ckise"]
+[ext_resource type="Script" uid="uid://rpp6qigyl17u" path="res://scripts/floorkill.gd" id="6_ckise"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ntnbk"]
 
 [node name="Root Game" type="Node2D" unique_id=209566638]
 process_mode = 3
 script = ExtResource("1_epe1p")
-metadata/_edit_vertical_guides_ = [191.0]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1995250615]
 zoom = Vector2(4, 4)

@@ -7,9 +7,6 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float):
-	$".".global_position = Vector2($".".global_position.x + speed * delta , $".".global_position.y)
-
 
 
 
