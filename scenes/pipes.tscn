@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dod5g8a1gfukd" path="res://scenes/score_update.gd" id="2_3ahhd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ntnbk"]
-size = Vector2(38, 64)
+size = Vector2(38, 61)
 
 [node name="Pipes" type="Node2D" unique_id=656475948]
 
@@ -20,6 +20,7 @@ priority = 1
 script = ExtResource("2_3ahhd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1036943585]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_ntnbk")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

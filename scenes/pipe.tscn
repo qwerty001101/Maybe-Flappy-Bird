@@ -12,8 +12,8 @@ metadata/_edit_horizontal_guides_ = [-116.0]
 metadata/_edit_vertical_guides_ = [-23.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1378593585]
-position = Vector2(0, 6.875001)
-scale = Vector2(1.2056249, 1.8925781)
+position = Vector2(0, 6.499984)
+scale = Vector2(1.2056249, 1.8984373)
 texture = ExtResource("1_8x3ej")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=392456508]

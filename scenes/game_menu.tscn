@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://c3kcgxukr3w81"]
+
+[ext_resource type="FontFile" uid="uid://div4dmmh6pn15" path="res://fonts/PixelOperator8-Bold.ttf" id="1_vrsc2"]
+[ext_resource type="Script" uid="uid://bmiujt1au3rui" path="res://scenes/game_menu.gd" id="1_ysvk1"]
+[ext_resource type="FontFile" uid="uid://c6pxlxl5x7beg" path="res://fonts/PixelOperator8.ttf" id="2_ysvk1"]
+
+[node name="Game menu" type="Control" unique_id=576700896]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ysvk1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1601339999]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=150468487]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.149
+anchor_right = 0.5
+anchor_bottom = 0.149
+offset_left = -388.0
+offset_top = 0.2999878
+offset_right = 388.0
+offset_bottom = 236.29999
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=624123358]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vrsc2")
+theme_override_font_sizes/font_size = 32
+text = "Flappy Bird (my first game)"
+
+[node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=2019799484]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_ysvk1")
+text = "by qwerty0011"
+
+[node name="Button" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=815105864]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_override_fonts/font = ExtResource("2_ysvk1")
+theme_override_font_sizes/font_size = 31
+text = "Play Game"
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Button" to="." method="_on_button_pressed"]
